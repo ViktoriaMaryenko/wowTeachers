@@ -9,12 +9,25 @@ body {
 	height: 800px;
 	background: url(../img/jumbotron.jpg) no-repeat center top / cover;
 	color: #fff;
-	
+	position: relative;
+}
+
+@media (max-width: 480px) {
+	header {
+		display: none;
+ }
+}
+
+@media (min-width: 480px) {
+	.navbar {
+		display: none;
+	}
 }
 
 .container {
 	width: 1170px;
 	margin: 0px auto;
+	max-width: 100%;
 }
 
 header {
@@ -22,18 +35,18 @@ header {
 }
 
 .mail {
-	float: left;
+	/*float: left;*/
 	font-size: 14px;
 	background: url(../img/mail.png) no-repeat left center;
 	padding-left: 25px;
 }
 
 .logo {
-	float: left;
+	/*float: left;*/
 	font-size: 16px;
 	font-weight: bold;
 	text-transform: uppercase;
-	margin: 0px 0px 0px 320px;
+	/*margin: 0px 0px 0px 320px;*/
 }
 
 .logo span {
@@ -41,27 +54,39 @@ header {
 }
 
 .phone {
-	float: right;
+	/*float: right;*/
 	font-size: 16px;
 	font-weight: bold;
-	background: url(../img/phone.png) no-repeat left center;
-	padding-left: 25px;
+	/*background: url(../img/phone.png) no-repeat left center;*/
+	/*padding-left: 25px;*/
 }
 
 h1 {
+	top: 150px;
+	position: absolute;
+	width: 100%;
+	height: 650px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+h1 span {
 	font-size: 50px;
 	text-transform: capitalize;
 	text-align: center;
 	font-weight: bold;
-	margin-top: 260px;
+	/*margin-top: 260px;*/
 	line-height: 2;
 }
 
-h1 span {
+h1 .pre-title {
 	font-size: 15px;
 	font-weight: normal;
 	display: block;
 	color: lightgrey;
+	margin-top: -150px;
 }
 
 .button {
@@ -109,6 +134,7 @@ h2 {
 	text-align: center;
 	width: 600px;
 	margin: 0px auto;
+	max-width: 100%;
 }
 
 .social-block {
@@ -181,6 +207,12 @@ footer {
 	padding: 50px 0px 60px 0px;
 }
 
+@media (max-width: 540px) {
+	footer .row > div {
+		justify-content: center !important;
+	 }
+}
+
 .credits {
 	font-size: 14px;
 	float: left;
@@ -188,7 +220,7 @@ footer {
 
 footer .logo {
 	margin-left: 0px;
-	margin-right: 283px;
+	/*margin-right: 283px;*/
 }
 
 .button:hover {

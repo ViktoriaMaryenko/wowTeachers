@@ -3,29 +3,76 @@
 <head>
 	<meta charset="UTF-8">
 	<title>portfolio_js</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"><meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/bootstrap.js"></script>
 </head>
 <body>
 	<section id="first">
+	<nav class="navbar navbar-light light-blue lighten-4">
+
+  
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+        class="fa fa-bars fa-1x"></i></span></button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <div class="mail">
+						mysik62@gmail.com
+					</div>
+      </li>
+      <li class="nav-item">
+        <div class="logo">
+						<span>виктория</span> марьенко
+					</div>
+      </li>
+      <li class="nav-item">
+        <div class="phone">
+					<img src="img/phone.png">
+						<span>
+							+38 (093) 798-95-95
+						</span>	
+					</div>
+      </li>
+    </ul>
+    <!-- Links -->
+
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
 		<header>
 			<div class="container">
-				<div class="mail">
-					mysik62@gmail.com
-				</div>
-				<div class="logo">
-					<span>виктория</span> марьенко
-				</div>
-				<div class="phone">
-					+38 (093) 798-95-95
-				</div>
+				<div class="row">
+					<div class="col-sm mail">
+						mysik62@gmail.com
+					</div>
+					<div class="col-sm justify-content-center d-flex logo">
+						<span>виктория</span> марьенко
+					</div>
+					<div class="col-sm justify-content-end d-flex align-items-center phone">
+					<img src="img/phone.png">
+						<span>
+							+38 (093) 798-95-95
+						</span>	
+					</div>
+				</div>	
 			</div>	
 		</header>
 			<h1>
-				<span>проект который вдохновляет</span> WOW Teachers
+				<span class="pre-title">проект который вдохновляет</span> <span>WOW Teachers</span>
 			</h1>
 	</section>
 
@@ -71,18 +118,20 @@
 
 	<footer>
 		<div class="container clearfix">
-			<div class="logo">
-				<span>виктория</span> марьенко
-			</div>
-			<div class="credits">
-				&#169; 2018 / Все права защищены
-			</div>
-			<div class="phone">
-				+38 (093) 798-95-95
-			</div>
+		<div class="row">
+				<div class="col-sm d-flex logo">
+					<span>виктория</span> марьенко
+				</div>
+				<div class="col-sm justify-content-center d-flex credits">
+					&#169; 2018 / Все права защищены
+				</div>
+				<div class="col-sm justify-content-end d-flex align-items-center phone">
+					+38 (093) 798-95-95
+				</div>
+			</div>	
 		</div>
 	</footer>
 
 	
-	</body>
+		</body>
 </html>
